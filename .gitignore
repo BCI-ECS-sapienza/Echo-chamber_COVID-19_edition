@@ -1,0 +1,6 @@
+tweets/original_tweet_ids
+tweets/tweet_ids
+tweets/hydrated_tweets
+tweets/final_dataset
+
+twarc.log
