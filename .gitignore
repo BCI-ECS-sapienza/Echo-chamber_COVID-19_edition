@@ -2,5 +2,8 @@ tweets/original_tweet_ids
 tweets/tweet_ids
 tweets/hydrated_tweets
 tweets/final_dataset
+tweets/final_dataset_test
+tweets/tweets_dataset.jsonl
+tweets/accounts.txt
 
 twarc.log
