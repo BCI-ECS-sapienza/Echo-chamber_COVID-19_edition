@@ -1,4 +1,4 @@
-# script to extract only english tweets
+# script to extract only english tweets from jsonl file
 #   usage:  python english_extractor.py [source] [dest]
 
 import jsonlines
