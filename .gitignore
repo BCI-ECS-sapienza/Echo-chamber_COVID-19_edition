@@ -1,11 +1,12 @@
-tweets/original_tweet_ids
-tweets/tweet_ids
-tweets/hydrated_tweets
-tweets/final_dataset
-tweets/final_dataset_test
-tweets/to_merge
-tweets/tweets_dataset.jsonl
-tweets/accounts.txt
+preprocessing/original_tweet_ids
+preprocessing/english_complete_dataset
+preprocessing/tweet_ids
+preprocessing/hydrated_tweets
+preprocessing/final_dataset
+preprocessing/final_dataset_test
+preprocessing/to_merge
+preprocessing/tweets_dataset.jsonl
+preprocessing/accounts.txt
 
 
 twarc.log
