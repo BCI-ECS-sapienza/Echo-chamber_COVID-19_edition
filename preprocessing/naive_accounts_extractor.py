@@ -1,4 +1,5 @@
 # list all the unique accounts with relatives number of tweets in the dataset
+#   usage: naive_accounts_extractor.py [jsonl files dir]
 
 import jsonlines
 import json
@@ -24,10 +25,10 @@ if len(sys.argv) > 1:
     # write dictionary on file
     with open('accounts.txt', 'w') as output:
         for elem in accounts.items():
-            output.write('%s %s\n' % elem)
+            output.write('%s    #%s\n' % elem)
 
     # output number accounts
     print(f"# unique accounts: {len(accounts)}"")
 
 else:
-    print('Correct usage: \n\tpython count_tweets.py [jsonl files dir]')
+    print('Correct usage: \n\tpython naive_accounts_extractor.py [jsonl files dir]')
