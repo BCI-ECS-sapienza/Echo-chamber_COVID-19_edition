@@ -8,5 +8,6 @@ preprocessing/to_merge
 preprocessing/tweets_dataset.jsonl
 preprocessing/accounts.txt
 
-
+.vscode
+.Ds_store
 twarc.log

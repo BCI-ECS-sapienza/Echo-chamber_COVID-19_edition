@@ -17,7 +17,7 @@ from google.colab import drive
 
 # tweets folder contains all tweets
 drive.mount('/content/drive')
-dataset = '/content/drive/My Drive/tweets'
+dataset = '/content/drive/My Drive/covid_project/tweets'
 print(dataset)
 
 """### make counter < account : # tweets >"""
@@ -89,4 +89,3 @@ plt.xlabel("# Tweets")
 plt.ylabel("# Users")
 
 plt.show()
-

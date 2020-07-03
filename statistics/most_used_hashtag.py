@@ -17,7 +17,7 @@ from google.colab import drive
 
 # tweets folder contains all tweets
 drive.mount('/content/drive')
-dataset = '/content/drive/My Drive/tweets'
+dataset = '/content/drive/My Drive/covid_project/tweets'
 print(dataset)
 
 """### make counter < hashtag : # tweets >"""
@@ -33,7 +33,7 @@ for file in glob.glob(dataset+"/*.jsonl"):
   with jsonlines.open(file) as infile:
       for line in infile:
           for hashtag in line['entities']['hashtags']:
-            tag = hashtag['text'].lower()  
+            tag = hashtag['text'].lower()
             hashtags[tag] += 1
 
 # remove dataset keywords (do not consider possible lower)
