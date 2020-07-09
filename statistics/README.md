@@ -8,6 +8,3 @@ This folder contains scripts to extract some statistics from the dataset:
 
 * **tweets_distribution**: output distribution mapping how many accounts shared the same number of tweets
 
----
-
-Note: these scripts assume to work on **colab**, change the "import data" section to make it work on local environment.
