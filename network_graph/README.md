@@ -16,7 +16,7 @@ This folder contains scripts to build the network graph:
 
 Each script takes as input a json file that is the result of a previous script, make sure to follow the order:
 1. After preprocessing, use **accounts_extractor** to make a list of all the users in _accounts.jsonl_;
-2. We cannot use all data to build the graph, thus sample some accounts with **sample_accounts_tweets**. *sampled_accounts.jsonl* contains all the users sampled, while *sampled_tweets.jsonl* contains all the corresponding tweets;
+2. We sample some accounts with **sample_accounts_tweets**. *sampled_accounts.jsonl* contains all the users sampled, while *sampled_tweets.jsonl* contains all the corresponding tweets;
 3. **domains_index** to build a pseudo inverted index < domain : users >, which makes easier to find the connections derived by common domains shared. It is saved in *inverted_domanins.jsonl*
 4. **retweet_mentions_extractor** to find all the connections given by retweets and mentions, the list is saved in *retweet_mentions.jsonl*
 5. Build the graph
