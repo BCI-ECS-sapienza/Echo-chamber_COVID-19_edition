@@ -34,6 +34,3 @@ Once hydrated the dataset we executed the following steps:
 * ##### [Manuel Ivagnes](https://www.linkedin.com/in/manuel-ivagnes-4a5ba018b)
 * ##### [Riccardo Bianchini](http://linkedin.com/in/riccardo-bianchini-7a391219b)
 * ##### [Valerio Coretti](https://www.linkedin.com/in/valerio-coretti-2913721a3)
-
----
-Note: Once on colab run **!pip install jsonlines** to avoid problems
