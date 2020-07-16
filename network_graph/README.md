@@ -22,4 +22,4 @@ Each script takes as input a json file that is the result of a previous script, 
 3. **domains_index** to build a pseudo inverted index < domain : users >, which makes easier to find the connections derived by common domains shared. It is saved in *inverted_domanins.jsonl*
 4. **hashtags_index** to build a pseudo inverted index < hashtag : users >, which makes easier to find the connections derived by common hashtags used. It is saved in *inverted_hashtags.jsonl*
 5. **retweet_mentions_extractor** to find all the connections given by retweets and mentions, the list is saved in *retweet_mentions.jsonl*
-6. Build and output the graph in *graph.pickle*
+6. **graph_construction** to build and output the graph in *graph.pickle*
