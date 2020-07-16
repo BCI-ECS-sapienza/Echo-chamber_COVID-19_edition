@@ -74,10 +74,7 @@ What is $(\Delta Q)$ if we move node <em>i</em> to community <em>C</em>?</p>
 * **Parameters**:
     ```
     G : Graph
-        Must be an undirected weighted graph in the form of a dictionary: {v : {neighbors}}
-            where 'neighbors' is a Counter structure like: {w1:weight, w2:weight, ...}
-            - w1 = neighbour node linked to v
-            - weight = weigth of the edge v -> w1
+        Must be an undirected weighted graph.
     ```
 * **Returns**:
     ```
