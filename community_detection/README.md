@@ -34,7 +34,7 @@ Q(G,S) = \underbrace{\frac{1}{2m}}_{-1&lt;Q&lt;1} \sum_{s \in S} \sum_{i \in S} 
 <li>Move <em>i</em> to the community of node <em>j</em> that yields the largest gain in <img src="https://i.upmath.me/svg/(%5CDelta%20Q)" alt="(\Delta Q)" /></li>
 </ul>
 <p>This first phase stops when a local maximum of the modularity is attained, i.e., when no individual node move can improve the modularity.
-What is $(\Delta Q)$ if we move node <em>i</em> to community <em>C</em>?</p>
+What is <img src="https://i.upmath.me/svg/(%5CDelta%20Q)" alt="(\Delta Q)" /> if we move node <em>i</em> to community <em>C</em>?</p>
 <p align="center" style="text-align: center;"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Baligned%7D%0A%5CDelta%20Q(i%20%E2%86%92%20C)%20%3D%20%5Cunderbrace%7B%5Cbigg%5B%5Cfrac%7B%5Csum_%7Bin%7D%20%5C%3B%2B%5C%3B%20k_%7Bi%2C%20in%7D%7D%7B2m%7D%20-%20%5Cbigg(%20%5Cfrac%7B%5Csum_%7Btot%7D%20%5C%3B%2B%5C%3B%20k_%7Bi%7D%7D%7B2m%7D%20%5Cbigg)%5E2%20%5Cbigg%5D%7D_%7Bgain%7D%20-%20%5Cunderbrace%7B%20%5Cbigg%5B%20%5Cunderbrace%7B%5Cfrac%7B%5Csum_%7Bin%7D%7D%7B2m%7D%20-%20%5Cbigg(%20%5Cfrac%7B%5Csum_%7Btot%7D%7D%7B2m%7D%20%5Cbigg)%5E2%7D_%7BModularity%5C%3Bof%5C%3BC%7D%20-%20%5Cunderbrace%7B%5Cbigg(%20%5Cfrac%7Bk_i%7D%7B2m%7D%20%5Cbigg)%5E2%7D_%7BModularity%5C%3Bof%5C%3Bi%7D%20%5Cbigg%5D%20%7D_%7Bloss%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20(2)%0A%5Cend%7Baligned%7D%0A" alt=" 
 \begin{aligned}
 \Delta Q(i → C) = \underbrace{\bigg[\frac{\sum_{in} \;+\; k_{i, in}}{2m} - \bigg( \frac{\sum_{tot} \;+\; k_{i}}{2m} \bigg)^2 \bigg]}_{gain} - \underbrace{ \bigg[ \underbrace{\frac{\sum_{in}}{2m} - \bigg( \frac{\sum_{tot}}{2m} \bigg)^2}_{Modularity\;of\;C} - \underbrace{\bigg( \frac{k_i}{2m} \bigg)^2}_{Modularity\;of\;i} \bigg] }_{loss} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (2)
@@ -69,6 +69,7 @@ What is $(\Delta Q)$ if we move node <em>i</em> to community <em>C</em>?</p>
 </ul>
 
 ## Pseudocode
+
 * **Description**: Given a graph G, finds the optimal community for each node
 
 * **Parameters**:
@@ -82,7 +83,9 @@ What is $(\Delta Q)$ if we move node <em>i</em> to community <em>C</em>?</p>
         Map each node to a community.
     ```
 
+
 #### INIT
+
 Put each node in a graph into a distinct community (one node per community).
 ```javascript
 communities = {}
@@ -92,7 +95,9 @@ for each (v in G):
 
 where *communities[v]* is the community of node *v*.
 
+
 #### PHASE 1
+
 ```javascript
 P1(G, communities):
 
@@ -129,7 +134,9 @@ P1(G, communities):
     return communities
 ```
 
+
 #### PHASE 2
+
 ```javascript
 P2(G, communities):
 
@@ -162,4 +169,6 @@ P2(G, communities):
 
 ---
 #### Reference 
-> CS246: Mining Massive Datasets Jure Leskovec, Stanford University - Community Detection in Graphs: http://cs246.stanford.edu
+> CS246: Mining Massive Datasets Jure Leskovec, Stanford University - **Community Detection in Graphs**: http://cs246.stanford.edu
+
+> Vincent D. Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre - **Fast Unfolding of communities in large networks**: https://arxiv.org/abs/0803.0476
