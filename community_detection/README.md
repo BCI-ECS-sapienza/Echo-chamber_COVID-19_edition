@@ -84,7 +84,7 @@ What is <img src="https://i.upmath.me/svg/(%5CDelta%20Q)" alt="(\Delta Q)" /> if
     ```
 
 
-#### INIT
+#### INIT
 
 Put each node in a graph into a distinct community (one node per community).
 ```javascript
