@@ -10,8 +10,8 @@
 <p>Given <em>G</em> on <strong><em>n</em></strong> nodes and <strong><em>m</em></strong> edges, the <strong>expected number of edges</strong> between nodes <em>i</em> and <em>j</em> of degrees <img src="https://i.upmath.me/svg/k_i" alt="k_i" /> and <img src="https://i.upmath.me/svg/k_j" alt="k_j" /> is equals to:</p>
 <p align="center" style="text-align: center;"><img align="center" src="https://i.upmath.me/svg/%20%5Cfrac%7Bk_i%20k_j%7D%7B2m%7D%20" alt=" \frac{k_i k_j}{2m} " /></p>
 <p><strong>Modularity of partitioning S of graph G</strong>:</p>
-<p align="center" style="text-align: center;"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Baligned%7D%20%0AQ(G%2CS)%20%3D%20%5Cunderbrace%7B%5Cfrac%7B1%7D%7B2m%7D%7D_%7B-1%3CQ%3C1%7D%20%5Csum_%7Bs%20%5Cin%20S%7D%20%5Csum_%7Bi%20%5Cin%20S%7D%20%5Csum_%7Bj%20%5Cin%20S%7D%20%5Cbigg(%20A_%7Bij%7D%20-%20%5Cfrac%7Bk_i%20k_j%7D%7B2m%7D%20%5Cbigg)%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20(1)%0A%5Cend%7Baligned%7D%0A" alt=" 
-\begin{aligned} 
+<p align="center" style="text-align: center;"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Baligned%7D%20%0AQ(G%2CS)%20%3D%20%5Cunderbrace%7B%5Cfrac%7B1%7D%7B2m%7D%7D_%7B-1%3CQ%3C1%7D%20%5Csum_%7Bs%20%5Cin%20S%7D%20%5Csum_%7Bi%20%5Cin%20S%7D%20%5Csum_%7Bj%20%5Cin%20S%7D%20%5Cbigg(%20A_%7Bij%7D%20-%20%5Cfrac%7Bk_i%20k_j%7D%7B2m%7D%20%5Cbigg)%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20(1)%0A%5Cend%7Baligned%7D%0A" alt="
+\begin{aligned}
 Q(G,S) = \underbrace{\frac{1}{2m}}_{-1&lt;Q&lt;1} \sum_{s \in S} \sum_{i \in S} \sum_{j \in S} \bigg( A_{ij} - \frac{k_i k_j}{2m} \bigg) \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (1)
 \end{aligned}
 " /></p>
@@ -35,7 +35,7 @@ Q(G,S) = \underbrace{\frac{1}{2m}}_{-1&lt;Q&lt;1} \sum_{s \in S} \sum_{i \in S} 
 </ul>
 <p>This first phase stops when a local maximum of the modularity is attained, i.e., when no individual node move can improve the modularity.
 What is <img src="https://i.upmath.me/svg/(%5CDelta%20Q)" alt="(\Delta Q)" /> if we move node <em>i</em> to community <em>C</em>?</p>
-<p align="center" style="text-align: center;"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Baligned%7D%0A%5CDelta%20Q(i%20%E2%86%92%20C)%20%3D%20%5Cunderbrace%7B%5Cbigg%5B%5Cfrac%7B%5Csum_%7Bin%7D%20%5C%3B%2B%5C%3B%20k_%7Bi%2C%20in%7D%7D%7B2m%7D%20-%20%5Cbigg(%20%5Cfrac%7B%5Csum_%7Btot%7D%20%5C%3B%2B%5C%3B%20k_%7Bi%7D%7D%7B2m%7D%20%5Cbigg)%5E2%20%5Cbigg%5D%7D_%7Bgain%7D%20-%20%5Cunderbrace%7B%20%5Cbigg%5B%20%5Cunderbrace%7B%5Cfrac%7B%5Csum_%7Bin%7D%7D%7B2m%7D%20-%20%5Cbigg(%20%5Cfrac%7B%5Csum_%7Btot%7D%7D%7B2m%7D%20%5Cbigg)%5E2%7D_%7BModularity%5C%3Bof%5C%3BC%7D%20-%20%5Cunderbrace%7B%5Cbigg(%20%5Cfrac%7Bk_i%7D%7B2m%7D%20%5Cbigg)%5E2%7D_%7BModularity%5C%3Bof%5C%3Bi%7D%20%5Cbigg%5D%20%7D_%7Bloss%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20(2)%0A%5Cend%7Baligned%7D%0A" alt=" 
+<p align="center" style="text-align: center;"><img align="center" src="https://i.upmath.me/svg/%20%0A%5Cbegin%7Baligned%7D%0A%5CDelta%20Q(i%20%E2%86%92%20C)%20%3D%20%5Cunderbrace%7B%5Cbigg%5B%5Cfrac%7B%5Csum_%7Bin%7D%20%5C%3B%2B%5C%3B%20k_%7Bi%2C%20in%7D%7D%7B2m%7D%20-%20%5Cbigg(%20%5Cfrac%7B%5Csum_%7Btot%7D%20%5C%3B%2B%5C%3B%20k_%7Bi%7D%7D%7B2m%7D%20%5Cbigg)%5E2%20%5Cbigg%5D%7D_%7Bgain%7D%20-%20%5Cunderbrace%7B%20%5Cbigg%5B%20%5Cunderbrace%7B%5Cfrac%7B%5Csum_%7Bin%7D%7D%7B2m%7D%20-%20%5Cbigg(%20%5Cfrac%7B%5Csum_%7Btot%7D%7D%7B2m%7D%20%5Cbigg)%5E2%7D_%7BModularity%5C%3Bof%5C%3BC%7D%20-%20%5Cunderbrace%7B%5Cbigg(%20%5Cfrac%7Bk_i%7D%7B2m%7D%20%5Cbigg)%5E2%7D_%7BModularity%5C%3Bof%5C%3Bi%7D%20%5Cbigg%5D%20%7D_%7Bloss%7D%20%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%5C%3B%20(2)%0A%5Cend%7Baligned%7D%0A" alt="
 \begin{aligned}
 \Delta Q(i → C) = \underbrace{\bigg[\frac{\sum_{in} \;+\; k_{i, in}}{2m} - \bigg( \frac{\sum_{tot} \;+\; k_{i}}{2m} \bigg)^2 \bigg]}_{gain} - \underbrace{ \bigg[ \underbrace{\frac{\sum_{in}}{2m} - \bigg( \frac{\sum_{tot}}{2m} \bigg)^2}_{Modularity\;of\;C} - \underbrace{\bigg( \frac{k_i}{2m} \bigg)^2}_{Modularity\;of\;i} \bigg] }_{loss} \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; (2)
 \end{aligned}
@@ -79,7 +79,7 @@ What is <img src="https://i.upmath.me/svg/(%5CDelta%20Q)" alt="(\Delta Q)" /> if
     ```
 * **Returns**:
     ```
-    communities : Dictionary 
+    communities : Dictionary
         Map each node to a community.
     ```
 
@@ -150,7 +150,7 @@ P2(G, communities):
         for each (edge in v):
             w = edge[0]
             cw = communities[w]
-            
+
             if cv != cw:
                 G_new[cv][cw] += 1
         delete G[v]
@@ -167,8 +167,18 @@ P2(G, communities):
 <center><img src="./img/output.png" width="800" height="200" /></center>
 <center><img src="./img/example.png" height="250" /></center>
 
+
 ---
-#### Reference 
+#### Files
+
+* **Louvain**: Run Louvain using the *community_detection* python library;
+
+* **MyLouvain**: Run Louvain using our implementation;
+
+* **tweets_each_community**:  output a jsonl file for each community to analyse, where each file contains all the tweets from that community;
+
+---
+#### Reference
 > CS246: Mining Massive Datasets Jure Leskovec, Stanford University - **Community Detection in Graphs**: http://cs246.stanford.edu
 
 > Vincent D. Blondel, Jean-Loup Guillaume, Renaud Lambiotte, Etienne Lefebvre - **Fast Unfolding of communities in large networks**: https://arxiv.org/abs/0803.0476
