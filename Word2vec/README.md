@@ -5,7 +5,7 @@ Since we are dealing with tweets, we need to do specific text cleaning. For exam
 
 **Steps**:
 1. Remove all duplicates and null text values in the data
-2. Clean data with the elimination of the emoticons, URLs and hashtag
+2. Remove emoticons, URLs and hashtag
 3. Remove stop words and alphanumerical words, apply lower-casing, remove punctuation and extra white spaces.
 4. Remove resulting empty rows
 
@@ -43,3 +43,4 @@ where <img src="https://i.upmath.me/svg/v%5Et_c" alt="v^t_c"/> is the vector rep
 * **word2vec**: Word2Vec method built from scratch.
 
 #### Reference
+Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean, *Efficient Estimation of Word Representations in Vector Space*
