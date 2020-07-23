@@ -6,8 +6,8 @@ Network analysis experiment for the "Web Information Retrieval" course at La Sap
 The goal is to find the polarization of the communities inside the Twitter social network regarding Coronavirus related topics. Indeed, with social media, misinformation about COVID-19, or vaccines, for example, can reach huge audiences and circulate very quickly. Therefore, it is crucial to find ways to recognize reliable information.
 
 For the experiment documents:
-* ##### [Short report]()
-* ##### [Presentation slides]()
+* ##### [Short report](./short_report.pdf)
+* ##### [Presentation slides](/slides.pdf)
 
 
 
